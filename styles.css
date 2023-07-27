@@ -175,15 +175,11 @@ body {
   /* small screen specifics: */
 
   /* Styles for the sliding tabs */
-nav {
-  display: none; /* Hide the navigation on larger screens */
-}
-
 .tab-list {
+  display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
 }
 
 .tab-list li {
@@ -192,17 +188,6 @@ nav {
   padding: 10px;
 }
 
-/* Add styles for the active tab, e.g., change background color */
 .tab-list li.active {
   background-color: #ff55aa;
-}
-
-/* Add styles for the content container that slides */
-#home, #about, #contact {
-  display: none;
-}
-
-/* Show the active content container */
-#home.active, #about.active, #contact.active {
-  display: block;
 }

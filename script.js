@@ -1,4 +1,4 @@
-// For sliding tabs
+// JavaScript code for sliding tabs
 const tabs = document.querySelectorAll('.tab-list li');
 const contentContainers = document.querySelectorAll('#home, #about, #contact');
 
@@ -12,11 +12,4 @@ tabs.forEach((tab, index) => {
     tab.classList.add('active');
     contentContainers[index].classList.add('active');
   });
-});
-
-// For the hamburger menu
-const hamburgerMenu = document.querySelector('.hamburger-menu');
-
-hamburgerMenu.addEventListener('click', () => {
-  hamburgerMenu.classList.toggle('active');
 });

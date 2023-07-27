@@ -248,3 +248,9 @@ body {
   background-color: #ff55aa;
 }
 
+/* CSS for the social media SVG icons */
+.social-icon {
+  fill: #ff69b4; /* Replace with your desired pink color */
+  width: 20px; /* Adjust the width of the icon as needed */
+  height: 20px; /* Adjust the height of the icon as needed */
+}

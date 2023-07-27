@@ -161,3 +161,7 @@ body {
     color: #ff55aa;
   }
   
+  img.right-image {
+    float: right;
+    margin: 0 0 20px 20px; /* Adjust the margin values for spacing */
+  }

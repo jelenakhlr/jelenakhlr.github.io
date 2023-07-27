@@ -170,3 +170,39 @@ body {
     float: none;
     margin: 0 0 20px 20px; /* Adjust the margin values for spacing */
   }
+
+
+  /* small screen specifics: */
+
+  /* Styles for the sliding tabs */
+nav {
+  display: none; /* Hide the navigation on larger screens */
+}
+
+.tab-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.tab-list li {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Add styles for the active tab, e.g., change background color */
+.tab-list li.active {
+  background-color: #ff55aa;
+}
+
+/* Add styles for the content container that slides */
+#home, #about, #contact {
+  display: none;
+}
+
+/* Show the active content container */
+#home.active, #about.active, #contact.active {
+  display: block;
+}

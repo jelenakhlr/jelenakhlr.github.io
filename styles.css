@@ -74,9 +74,14 @@ body {
     color: #ff55aa;
   }
   
+  /* links */
   a {
     color: inherit;
     text-decoration: none;
+  }
+
+  a:hover {
+    color: #ff69b4; /* Replace with your desired hover color */
   }
   
   /* Footer styles */

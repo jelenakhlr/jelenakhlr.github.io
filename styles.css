@@ -6,6 +6,15 @@ body {
     margin: 0;
     padding: 0;
   }
+
+  /* Dark mode styles */
+  @media screen and (max-width: 768px) {
+    body {
+      background-color: #000;
+      color: #ccc;
+    }
+    /* Update other elements' styles here */
+  }
   
   /* Header styles */
   header {
@@ -91,15 +100,6 @@ body {
     text-align: center;
   }
   
-  /* Dark mode styles */
-  @media (prefers-color-scheme: dark) {
-    body {
-      background-color: #000;
-      color: #ccc;
-    }
-    /* Update other elements' styles here */
-  }
-  
   .presentation-table {
     width: 100%;
     border-collapse: collapse;
@@ -167,6 +167,6 @@ body {
   }
   
   img.right-image {
-    float: right;
+    float: none;
     margin: 0 0 20px 20px; /* Adjust the margin values for spacing */
   }

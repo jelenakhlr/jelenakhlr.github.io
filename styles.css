@@ -8,13 +8,13 @@ body {
   }
 
   /* Dark mode styles */
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
     body {
       background-color: #000;
       color: #ccc;
-    }
+    }} */
     /* Update other elements' styles here */
-  }
+   
   
   /* Header styles */
   header {
@@ -100,6 +100,7 @@ body {
     text-align: center;
   }
   
+  /* Table styles */
   .presentation-table {
     width: 100%;
     border-collapse: collapse;
@@ -127,11 +128,7 @@ body {
   .presentation-table tbody tr:hover {
     background-color: #A26291;
   }
-  
-  .banner {
-    position: relative;
-  }
-  
+
 
   .five-column-table {
     width: 100%;
@@ -184,48 +181,22 @@ body {
     background-color: #A26291;
   }
   
-
-
-
+  /* Banner styles */
+  .banner {
+    position: relative;
+  }
 
   .banner img {
     width: 100%;
     height: auto;
   }
-
-  nav {
-    background-color: #222;
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    margin: 0 10px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-  }
-  
-  nav a:hover {
-    background-color: #444;
-    border-radius: 5px;
-    color: #ff55aa;
-  }
   
   img.right-image {
     float: none;
-    margin: 0 0 20px 20px; /* Adjust the margin values for spacing */
+    margin: 0 0 20px 20px; 
   }
+  /* Adjust the margin values for spacing */
+
 
 
 
@@ -235,6 +206,8 @@ body {
   width: 20px; /* Adjust the width of the icon as needed */
   height: 20px; /* Adjust the height of the icon as needed */
 }
+
+
 
 /* Menu Icon */
 .hamb{
@@ -274,6 +247,7 @@ body {
 } /* Hide checkbox */
 
 
+
 /* Toggle menu icon */
 .side-menu:checked ~ nav{
   max-height: 100%;
@@ -289,6 +263,8 @@ body {
   transform: rotate(45deg);
   top:0;
 }
+
+
 
 /* Responsiveness */
 @media (min-width: 768px) {
@@ -308,8 +284,44 @@ body {
       border-radius: 5px;
       color: #ff55aa;
     }
+  .menu a{
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+    }
+  .menu ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .menu li{
+      margin: 0 10px;
+  }
 
-    .hamb{
+  .hamb{
         display: none;
     }
 }
+
+
+/* Nav styles */
+/* nav {
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+} */
+
+/* nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+} */
+
+/* nav li {
+  margin: 0 10px;
+} */
+
+
+

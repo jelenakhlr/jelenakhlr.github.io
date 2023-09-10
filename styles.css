@@ -228,29 +228,88 @@ body {
   }
 
 
-  /* small screen specifics: */
-
-  /* Styles for the sliding tabs */
-.tab-list {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.tab-list li {
-  flex: 1;
-  text-align: center;
-  padding: 10px;
-}
-
-.tab-list li.active {
-  background-color: #ff55aa;
-}
 
 /* CSS for the social media SVG icons */
 .social-icon {
   fill: #ff69b4; /* Replace with your desired pink color */
   width: 20px; /* Adjust the width of the icon as needed */
   height: 20px; /* Adjust the height of the icon as needed */
+}
+
+/* Menu Icon */
+.hamb{
+  cursor: pointer;
+  float: right;
+  padding: 40px 20px;
+}/* Style label tag */
+
+.hamb-line {
+  background: var(--white);
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+
+} /* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after{
+  background: var(--white);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.hamb-line::before{
+  top: 5px;
+}
+.hamb-line::after{
+  top: -5px;
+}
+
+.side-menu {
+  display: none;
+} /* Hide checkbox */
+
+
+/* Toggle menu icon */
+.side-menu:checked ~ nav{
+  max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top:0;
+}
+
+/* Responsiveness */
+@media (min-width: 768px) {
+  .nav{
+      max-height: none;
+      top: 0;
+      position: relative;
+      float: right;
+      width: fit-content;
+      background-color: transparent;
+  }
+  .menu li{
+      float: left;
+  }
+  .menu a:hover{
+      background-color: #444;
+      border-radius: 5px;
+      color: #ff55aa;
+    }
+
+    .hamb{
+        display: none;
+    }
 }

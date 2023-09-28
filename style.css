@@ -88,10 +88,11 @@ ul{
 .menu a{
     display: block;
     padding: 30px;
-    color: var(--white);
+    color: #fff;
 }
 .menu a:hover{
-    background-color: var(--gray);
+  background-color: #444;
+  color: #ff55aa;
 }
 .nav{
     max-height: 0;

@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import myImg from "../../Assets/mk-lngs.png";
+import myImg from "../../Assets/jk-home.jpg";
 import Home2 from "./Home2";
 import Type from "./Type";
 

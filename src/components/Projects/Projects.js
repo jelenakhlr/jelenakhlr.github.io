@@ -2,9 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import cluster from "../../Assets/Projects/galaxy-clusters.png";
-import snews_pt from "../../Assets/Projects/snews_logo.png";
-import ptany from "../../Assets/Projects/kara-pythonanywhere.png";
 
 function Projects() {
   return (
@@ -23,7 +20,6 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={snews_pt}
               isBlog={false}
               title="CoreasSpellcaster"
               description="Creates CORSIKA input files for many showers and directly submits the jobs with slurm."

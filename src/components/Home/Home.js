@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import myImg from "../../Assets/jk-home.jpg";
+import myImg from "../../Assets/about.png";
 import Home2 from "./Home2";
 import Type from "./Type";
 
@@ -16,7 +16,7 @@ function Home() {
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
+                  ✨🚀
                 </span>
               </h1>
 

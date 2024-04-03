@@ -9,13 +9,13 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My <strong className="purple">Current Projects </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          
         </p>
         <h2 className="project-heading">
-          -Working on updating this page-
+          
         </h2>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
@@ -29,7 +29,6 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={snews_pt}
               isBlog={false}
               title="Sim2Root"
               description="Converts CoREAS simulations to the GRANDroot file format and unit conventions."

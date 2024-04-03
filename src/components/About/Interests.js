@@ -1,32 +1,29 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { SiAtom, SiHurriyetemlak } from "react-icons/si";
-import { AiOutlineStock } from "react-icons/ai"
 import {DiPython} from "react-icons/di";
+import { FaCamera, FaCode } from "react-icons/fa";
+
 
 function Interests() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-          <DiPython />
-          <h2> Python </h2>
-      </Col>
-      {/* <Col xs={4} md={2} className="tech-icons">
-        <AiOutlineStock />
-          <h2> Statistics </h2>
-      </Col> */}
-      <Col xs={4} md={2} className="tech-icons">
         <SiAtom />
           <h2> Science </h2>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiHeroku />
+        <FaCode />
           <h2> Coding </h2>
       </Col>
-      {/*<Col xs={4} md={2} className="tech-icons">*/}
-      {/*  <SiHeroku />*/}
-      {/*    <h2> Coding </h2>*/}
-      {/*</Col>*/}
+      <Col xs={4} md={2} className="tech-icons">
+          <DiPython />
+          <h2> Python </h2>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaCamera />
+          <h2> Photography </h2>
+      </Col>
     </Row>
   );
 }

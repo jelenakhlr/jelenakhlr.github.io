@@ -7,6 +7,7 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
+import { FaUniversity, FaCode } from "react-icons/fa";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -75,7 +76,7 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
+                <FaCode
                   style={{ marginBottom: "2px" }}
                 />{" "}
                 Projects
@@ -98,7 +99,7 @@ function NavBar() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Short blogs
+                <FaUniversity style={{ marginBottom: "2px" }} /> KSETA Page
               </Nav.Link>
             </Nav.Item>
 

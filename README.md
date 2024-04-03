@@ -1,6 +1,6 @@
 <h3 align="center">
     🔹
-    <a href="https://karamelih.github.io/">Check out my page</a>
+    <a href="https://jelenakhlr.github.io/">Check out my page</a>
     🔹
 </h3>
 
